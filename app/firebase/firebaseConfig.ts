@@ -1,9 +1,19 @@
+import { 
+    FIREBASE_API_KEY,
+    FIREBASE_AUTH_DOMAIN,
+    FIREBASE_DATABASE_URL,
+    FIREBASE_PROJECT_ID,
+    FIREBASE_STORAGE_BUCKET,
+    FIREBASE_MESSAGING_SENDER_ID,
+    FIREBASE_APP_ID
+  } from '@env';
+  
 export const firebaseConfig = {
-    apiKey: "AIzaSyDidZh-afBSXMT99wbA1YUNvt7d-yml9o8",
-    authDomain: "tictactoe-c5be7.firebaseapp.com",
-    databaseURL: "https://tictactoe-c5be7-default-rtdb.firebaseio.com",
-    projectId: "tictactoe-c5be7",
-    storageBucket: "tictactoe-c5be7.firebasestorage.app",
-    messagingSenderId: "826546727068",
-    appId: "1:826546727068:web:6b07535e354fe5d2d76559"
+    apiKey: FIREBASE_API_KEY,
+    authDomain: FIREBASE_AUTH_DOMAIN,
+    databaseURL: FIREBASE_DATABASE_URL,
+    projectId: FIREBASE_PROJECT_ID,
+    storageBucket: FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
+    appId: FIREBASE_APP_ID
 };
