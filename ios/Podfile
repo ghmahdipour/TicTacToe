@@ -14,6 +14,8 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
+use_modular_headers!
+
 target 'TicTacToe' do
   config = use_native_modules!
 
@@ -22,7 +24,16 @@ target 'TicTacToe' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
+  pod 'RNWorklets', :path => '../node_modules/react-native-worklets'
+  pod 'RNSound', :path => '../node_modules/react-native-sound'
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
 
+  pod 'Firebase/Core', :modular_headers => true
+  pod 'Firebase/Firestore', :modular_headers => true
+
+  # target 'TicTacToeTests' do
+  #   inherit! :complete
+  # end
   post_install do |installer|
     react_native_post_install(
       installer,

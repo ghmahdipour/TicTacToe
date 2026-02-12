@@ -1,97 +1,92 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# TicTacToe — Real‑Time Multiplayer & Local Game  
+A production‑grade React Native application showcasing scalable architecture, real‑time networking, and polished UI/UX.
 
-# Getting Started
+## 📌 Overview
+TicTacToe is a mobile game built with **React Native**, designed with a modular, maintainable architecture and a strong focus on user experience.  
+It includes both **local gameplay** and **real‑time online multiplayer**, powered by WebSockets and managed through Redux Toolkit + Redux‑Saga.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+This project demonstrates senior‑level engineering practices such as:
 
-## Step 1: Start Metro
+- Clean separation of UI, logic, and side‑effects  
+- Predictable state management with Redux Toolkit  
+- Scalable async flows using Redux‑Saga 
+- Pure reducers and testable logic  
+- Smooth animations and polished interactions  
+- Optimized audio system with preloading and lifecycle control  
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+---
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## ✨ Features
+- Real‑time multiplayer powered by Firestore listeners  
+- Local two‑player mode with instant board updates  
+- Scalable architecture with clear module boundaries  
+- Redux Toolkit for predictable state management  
+- Redux‑Saga for async orchestration and multiplayer lifecycle  
+- Smooth animations (Lottie, Animatable, Reanimated)  
+- SVG‑based board rendering  
+- Sound effects for moves, wins, and draws  
+- Responsive UI across all screen sizes  
 
-```sh
-# Using npm
-npm start
+### 🎮 Gameplay
+- Local mode (Self vs Self)
+- Online multiplayer with room creation & joining
+- Dynamic board sizes (3×3, 5×5, 7×7…)
+- Custom win‑length logic
+- Real‑time synchronization between players
+- Smart turn‑indicator logic (winner‑aware)
 
-# OR using Yarn
-yarn start
-```
+### 🖥 UI/UX
+- Animated glassmorphism winner modal
+- Smooth transitions (zoom‑in, fade‑in, bounce)
+- Responsive layout for all screen sizes
+- Custom SVG components (circle indicators, icons)
 
-## Step 2: Build and run your app
+### 🔊 Audio System
+- Preloaded SFX (move, win, draw, button)
+- Background music with lifecycle control
+- Centralized AudioManager for consistent playback
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### 🌐 Networking
+- WebSocket‑based real‑time communication
+- Automatic cleanup on unmount
+- Room validation (Room not found)
+- Opponent disconnect detection
+- Debounced error toasts (no duplicate modals)
 
-### Android
+---
 
-```sh
-# Using npm
-npm run android
+### Key Principles
+- **Single Responsibility Principle**  
+- **Pure reducers** (no side‑effects)  
+- **UI/Logic separation**  
+- **Predictable async flows**  
+- **Reusable components**  
+- **Performance‑first mindset**  
 
-# OR using Yarn
-yarn android
-```
+---
 
-### iOS
+## 🔄 Online Game Flow
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+```mermaid
+flowchart TD
+    A[Create/Join Room] --> B[listenBoard Saga]
+    B --> C[Server Sync]
+    C --> D[Redux Store]
+    D --> E[useOnlineGame Hook]
+    E --> F[BoardScreen UI]
+    F --> G[User Move]
+    G --> H[makeMoveRequest Saga]
+    H --> C
+---
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+## 🧱 Architecture Diagram
 
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+```mermaid
+flowchart LR
+    UI[UI Components] --> Hooks
+    Hooks --> Store
+    Store --> Sagas
+    Sagas --> WebSocket
+    WebSocket --> Store
+    Store --> UI
+---

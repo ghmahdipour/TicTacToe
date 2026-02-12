@@ -1,4 +1,9 @@
 {
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strict": true,
+    "strictNullChecks": true
+  },
   "extends": "@react-native/typescript-config",
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["**/node_modules", "**/Pods"]
