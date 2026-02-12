@@ -77,3 +77,18 @@ yarn-error.log
 #local
 .lh
 .vscode
+# environment variables
+.env
+.env.*
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Firebase local emulator
+firebase-debug.log
+.firebase/
+
+# Android keystore
+*.keystore
+*.jks
