@@ -11,16 +11,16 @@ It includes both **local gameplay** and **real‑time online multiplayer**, powe
 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/0e5dc743-c160-4147-bb11-79be6c062434" alt="Home" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/9cb20a11-697b-46d9-a3bb-53bf8db0d6e9" alt="Level" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/71729497-6fe2-49da-a59b-bd50e7b001bb" alt="Easy" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/6c9233b7-4e7d-450f-891e-81707840d000" alt="Medium" width="200"/></td>
+    <td><img src="/assets/Home.png" alt="Home" width="200"/></td>
+    <td><img src="/assets/Level.png" alt="Level" width="200"/></td>
+    <td><img src="/assets/Easy.png" alt="Easy" width="200"/></td>
+    <td><img src="/assets/Medium.png" alt="Medium" width="200"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/1f33bb15-b9d7-4281-a863-423b497c1543" alt="Hard" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/9bdce3c5-65a1-4354-b2b1-a32388769eed" alt="Online Creator" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/422de48d-12a3-442c-a342-2da5c063b37c" alt="Join" width="200"/></td>
-    <td><img src="https://github.com/user-attachments/assets/44ecf2d5-108a-41a6-b7ed-8a888c64e447" alt="Joined" width="200"/></td>
+    <td><img src="/assets/Hard.png" alt="Hard" width="200"/></td>
+    <td><img src="/assets/Online.png" alt="Online Creator" width="200"/></td>
+    <td><img src="/assets/Join.jpeg" alt="Join" width="200"/></td>
+    <td><img src="/assets/Joined.Join.jpeg" alt="Joined" width="200"/></td>
   </tr>
 </table>
 
@@ -86,7 +86,7 @@ It includes both **local gameplay** and **real‑time online multiplayer**, powe
 
 Scan the QR code below to download the latest version of the game:
 
-![TicTacToe QR Code](/android/app/src/main/assets/qrcode.png)
+![TicTacToe QR Code](/assets/qrcode.png)
 
 
 
