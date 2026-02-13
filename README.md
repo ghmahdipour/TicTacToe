@@ -5,17 +5,6 @@ A production‑grade React Native application showcasing scalable architecture, 
 TicTacToe is a mobile game built with **React Native**, designed with a modular, maintainable architecture and a strong focus on user experience.  
 It includes both **local gameplay** and **real‑time online multiplayer**, powered by WebSockets and managed through Redux Toolkit + Redux‑Saga.
 
-This project demonstrates senior‑level engineering practices such as:
-
-- Clean separation of UI, logic, and side‑effects  
-- Predictable state management with Redux Toolkit  
-- Scalable async flows using Redux‑Saga 
-- Pure reducers and testable logic  
-- Smooth animations and polished interactions  
-- Optimized audio system with preloading and lifecycle control  
-
----
-
 ## 📸 Screenshots
 
 ### Offline & Online Gameplay with Firebase
@@ -37,6 +26,15 @@ This project demonstrates senior‑level engineering practices such as:
 
 ---
 
+## 🕹️ How to Play
+
+- Two players can play locally on the same device.  
+- Or connect online to challenge friends in real-time.  
+- The game automatically tracks scores and winners.
+- Dynamic board sizes (3×3, 4×4, 5×5)
+    
+---
+
 ## ✨ Features
 - Real‑time multiplayer powered by Firestore listeners  
 - Local two‑player mode with instant board updates  
@@ -47,14 +45,6 @@ This project demonstrates senior‑level engineering practices such as:
 - SVG‑based board rendering  
 - Sound effects for moves, wins, and draws  
 - Responsive UI across all screen sizes  
-
-### 🎮 Gameplay
-- Local mode (Self vs Self)
-- Online multiplayer with room creation & joining
-- Dynamic board sizes (3×3, 4×4, 5×5)
-- Custom win‑length logic
-- Real‑time synchronization between players
-- Smart turn‑indicator logic (winner‑aware)
 
 ### 🖥 UI/UX
 - Animated glassmorphism winner modal
@@ -68,12 +58,11 @@ This project demonstrates senior‑level engineering practices such as:
 - Centralized AudioManager for consistent playback
 
 ### 🌐 Networking
-- WebSocket‑based real‑time communication
-- Automatic cleanup on unmount
-- Room validation (Room not found)
-- Opponent disconnect detection
-- Debounced error toasts (no duplicate modals)
-
+- **Real-time multiplayer** using Firebase Realtime Database / Firestore  
+- Automatic cleanup when leaving a game or component unmounts  
+- **Room validation**: shows error if the room does not exist  
+- Detects when your opponent disconnects  
+- **Debounced error messages**: prevents duplicate error pop-ups
 ---
 
 ### Key Principles
