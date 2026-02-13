@@ -46,16 +46,22 @@ It includes both **local gameplay** and **real‑time online multiplayer**, powe
 - Sound effects for moves, wins, and draws  
 - Responsive UI across all screen sizes  
 
+---
+
 ### 🖥 UI/UX
 - Animated glassmorphism winner modal
 - Smooth transitions (zoom‑in, fade‑in, bounce)
 - Responsive layout for all screen sizes
 - Custom SVG components (circle indicators, icons)
 
+---
+
 ### 🔊 Audio System
 - Preloaded SFX (move, win, draw, button)
 - Background music with lifecycle control
 - Centralized AudioManager for consistent playback
+
+---
 
 ### 🌐 Networking
 - **Real-time multiplayer** using Firebase Realtime Database / Firestore  
@@ -63,9 +69,10 @@ It includes both **local gameplay** and **real‑time online multiplayer**, powe
 - **Room validation**: shows error if the room does not exist  
 - Detects when your opponent disconnects  
 - **Debounced error messages**: prevents duplicate error pop-ups
+  
 ---
 
-### Key Principles
+### 🎯 Key Principles
 - **Single Responsibility Principle**  
 - **Pure reducers** (no side‑effects)  
 - **UI/Logic separation**  
