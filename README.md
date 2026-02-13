@@ -84,6 +84,13 @@ This project demonstrates senior‑level engineering practices such as:
 - **Reusable components**  
 - **Performance‑first mindset**  
 
+---
+
+## 📥 Download TicTacToe APK
+
+Scan the QR code below to download the latest version of the game:
+
+![TicTacToe QR Code](/android/app/src/main/assets/)
 
 
 
