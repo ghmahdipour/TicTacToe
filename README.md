@@ -90,7 +90,7 @@ This project demonstrates senior‑level engineering practices such as:
 
 Scan the QR code below to download the latest version of the game:
 
-![TicTacToe QR Code](/android/app/src/main/assets/)
+![TicTacToe QR Code](/android/app/src/main/assets/qrcode.png)
 
 
 
