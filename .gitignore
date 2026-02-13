@@ -92,3 +92,4 @@ firebase-debug.log
 # Android keystore
 *.keystore
 *.jks
+android/app/*.keystore
