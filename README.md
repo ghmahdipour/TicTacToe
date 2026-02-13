@@ -18,9 +18,9 @@ It includes both **local gameplay** and **real‑time online multiplayer**, powe
   </tr>
   <tr>
     <td><img src="/assets/Hard.png" alt="Hard" width="200"/></td>
-    <td><img src="/assets/Online.png" alt="Online Creator" width="200"/></td>
+    <td><img src="/assets/Online Creator.png" alt="Online Creator" width="200"/></td>
     <td><img src="/assets/Join.jpeg" alt="Join" width="200"/></td>
-    <td><img src="/assets/Joined.Join.jpeg" alt="Joined" width="200"/></td>
+    <td><img src="/assets/Joined.jpeg" alt="Joined" width="200"/></td>
   </tr>
 </table>
 
